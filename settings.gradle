@@ -1,0 +1,6 @@
+rootProject.name = 'sales_management'
+
+include ':components:base',
+        ':components:window',
+        ':components:product_item',
+        ':core'

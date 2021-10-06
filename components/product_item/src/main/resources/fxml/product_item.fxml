@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root_container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox>
+         <children>
+            <ImageView fx:id="img_product" fitHeight="122.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/noodle.png" />
+               </image>
+            </ImageView>
+            <VBox style="-fx-background-color: #131313; -fx-padding: 15px; -fx-spacing: 10px;">
+               <children>
+                  <Label fx:id="lab_name" style="-fx-text-fill: #E5E5E5; -fx-font-weight: bold;" text="Ramen" />
+                  <HBox style="-fx-spacing: 20;">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" style="-fx-spacing: 10;">
+                           <children>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/stack.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="lab_rest" style="-fx-text-fill: #C7C7C7;" text="Rest" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" style="-fx-spacing: 10;">
+                           <children>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/money.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="lab_price" style="-fx-text-fill: #C7C7C7;" text="50 $" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <StackPane fx:id="counter_container" layoutX="115.0" layoutY="90.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white; -fx-background-radius: 50%;" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label fx:id="lab_count" style="-fx-font-weight: bold;" text="4" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

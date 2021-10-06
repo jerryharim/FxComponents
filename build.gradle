@@ -1,0 +1,23 @@
+allprojects {
+    group 'mg.salesManagement'
+    version '0.1'
+}
+
+subprojects {
+    apply plugin: 'application'
+
+    sourceCompatibility = 11
+    targetCompatibility = 11
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    application {
+        mainClass = 'mg.salesManagement.core.Main'
+    }
+
+}
+
+
