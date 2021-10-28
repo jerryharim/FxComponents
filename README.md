@@ -1,6 +1,6 @@
 # FxComponents
 
-A reusable javafx component collection.
+A reusable javafx components collection.
 
 ## About the project
 

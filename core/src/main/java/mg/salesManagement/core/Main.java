@@ -31,9 +31,9 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
 
         // data
-        Product chickenFried = new Product("Chicken Fried Steak & Eggs", 3000, 13);
-        Product bananaMacadamiaNutPancakes = new Product("Banana Macadamia Nut Pancakes", 300, 11);
-        Product frenchToastCombo = new Product("French Toast Combo", 30, 10);
+        Product chickenFried = new Product("Chicken Fried Steak & Eggs", 13, 10);
+        Product bananaMacadamiaNutPancakes = new Product("Banana Macadamia Nut Pancakes", 11, 20);
+        Product frenchToastCombo = new Product("French Toast Combo", 10, 30);
 
         final List<Product> products = new ArrayList<>();
         products.add(chickenFried);
