@@ -6,7 +6,7 @@ A reusable javafx components collection.
 
 Reusing our code is a luxury in the code world. In the case of a JavaFx project, 
 we would like to be able to reuse for example our beautiful login interface, 
-customize window, add product form, ... with their animations, their behavior 
+our custom window, our product add form, ... with their animations, their behavior 
 without having to rewrite everything.
 
 We can copy the files that constitute them (our fxml and our controller) but we must 
