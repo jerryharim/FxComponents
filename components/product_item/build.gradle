@@ -13,5 +13,5 @@ repositories {
 }
 
 dependencies {
-    implementation project(':components:base')
+    implementation project(':components:baseold')
 }

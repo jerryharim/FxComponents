@@ -1,0 +1,371 @@
+/* ARSF Stylesheet 
+ * Group all style class used in the app
+ * */
+
+@font-face {
+    font-family: lato;
+    src: url("../fonts/lato/Lato-Light.ttf");
+}
+@font-face {
+    font-family: latot;
+    src: url("../fonts/lato/Lato-Thin.ttf");
+}
+@font-face {
+    font-family: thinwa;
+    src: url("../fonts/lato/Lato-Thin.ttf");
+}
+
+.label{
+  -fx-font-family: thinwa;
+}
+
+/* BOX */
+
+.main_container {
+	-fx-background-color: white; 
+	-fx-border-radius: 5px; 
+	-fx-min-width: 300px;
+	-fx-pref-width: 300px;
+	-fx-max-width: 300px;
+}
+
+.main {
+	-fx-background-color: white;
+	-fx-background-radius: 5px;
+}
+
+
+/* regular-box */
+
+.medium-regular-box { -fx-padding: 18px; }
+.tiny-regular-box { -fx-padding: 6px; }
+.large-box  { -fx-padding: 30px; }
+
+.large-vbox-container { -fx-spacing: 30; -fx-padding: 24px 18px 24px 18; }
+
+/* styled box */
+.medium-border-box {
+	-fx-border-color: #d6d6d6;
+	-fx-padding: 18px;
+	-fx-border-radius: 10px;
+}
+
+/* colors */
+.box-light { 
+  -fx-background-color: white;
+  -fx-background-radius: 10px;
+  -fx-effect: dropshadow(three-pass-box, rgba(50, 50, 50, 0.8), 3, 0, 0, 1);
+}
+
+/* Spacing */
+.tiny-spacing 		{ -fx-spacing: 6px;  }
+.small-spacing 		{ -fx-spacing: 12px; }
+.medium-spacing 	{ -fx-spacing: 18px; }
+.large-spacing 		{ -fx-spacing: 24px; }
+.huge-spacing 		{ -fx-spacing: 30px; }
+.veryhuge-spacing 	{ -fx-spacing: 36px; }
+
+.tiny-vertical-spacing { -fx-spacing: 6px; }
+.tiny-hbox-container { -fx-spacing: 6px; -fx-padding: 0; }
+.medium-hbox-container { -fx-spacing: 24px; -fx-padding: 0; }
+.large-hbox-container { -fx-spacing: 30px; -fx-padding: 0; }
+
+
+/* BUTTON */
+
+/* Reset */
+
+.button-basic {
+    -fx-padding: 0;
+    -fx-border: none;
+    -fx-background-color: transparent;
+    -fx-background-insets: none;
+    -fx-min-height: 36px;
+    -fx-pref-height: 36px;
+    -fx-max-height: 36px;
+}
+
+.button-basic:hover {
+    -fx-cursor: hand;
+}
+
+.button-danger {
+    -fx-border-width: 0;
+
+    -fx-background-color: red;
+    -fx-background-radius: 5px;
+	-fx-text-fill: #fafafa;
+
+    -fx-font-weight: bold;
+    -fx-padding: 0 12px 0 12px;
+    -fx-content-display: text-only;
+}
+
+.button-primary {
+    -fx-border-width: 0;
+
+    -fx-background-color: #179B9E;
+    -fx-background-radius: 5px;
+	-fx-text-fill: #fafafa;
+
+    -fx-font-weight: bold;
+    -fx-padding: 0 12px 0 12px;
+    -fx-content-display: text-only;
+
+	-fx-effect: dropshadow(gaussian, #ADC9C9, 15, 0, -2, 5);
+}
+
+.button-primary:hover {
+	-fx-background-color: #18ADB0;
+	-fx-effect: dropshadow(gaussian, #ADC9C9, 20, 0, -2, 8);
+	-fx-scale-x: 1.01;
+	-fx-scale-y: 1.01;
+}
+
+.button-secondary {
+    -fx-border-color: #D6D6D6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 0 12px 0 12px;
+
+    -fx-background-color: #FAFAFA;
+    -fx-background-radius: 5px;
+    -fx-font-weight: bold;
+    -fx-content-display: text-only;
+}
+
+.button-transparent {
+    -fx-border-color: transparent;
+    -fx-padding: 0 12px 0 12px;
+
+    -fx-background-color: transparent;
+    -fx-content-display: text-only;
+}
+
+.button-transparent:hover {
+    -fx-font-weight: bold;
+}
+
+.button-border-only {
+    -fx-padding: 0 12px 0 12px;
+
+    -fx-background-color: transparent;
+    -fx-border-color: #D6D6D6;
+    -fx-content-display: text-only;
+
+	-fx-font-weight: bold;
+	-fx-border-radius: 5px;
+}
+
+.button-border-only:hover {
+    -fx-font-weight: bold;
+}
+
+
+/* DATEPICKER */
+
+.datepicker-box { -fx-spacing: 6px; }
+.datepicker-box .root { -fx-spacing: 6px; }
+.datepicker-box .text { -fx-font-family: 'lato'; }
+
+.datepicker-box .date-picker {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+    -fx-border-color: #D6D6D6;
+    -fx-border-width: 1px;
+	-fx-border-radius: 5px;
+    -fx-pref-height: 36px;
+}
+
+.datepicker-box .date-picker:disabled {
+	-fx-opacity: 1.0;
+}
+
+.datepicker-box .date-picker-display-node {
+	-fx-background-insets: 0;
+}
+
+.datepicker-box .text-field {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+    -fx-padding: 0 12px;
+}
+
+
+.datepicker-box .arrow-button {
+	-fx-background-color: transparent;
+	-fx-border-color: #D6D6D6;
+	-fx-border-radius: 5px;
+	-fx-padding: 12px;
+}
+
+.datepicker-box .arrow-button:hover {
+	-fx-background-color: #f5f5f5;
+}
+
+/* DROP DOWN */
+
+.dropdown-box .root { -fx-spacing: 6px; }
+
+.dropdown-box .label {
+    -fx-font-family: 'lato';
+	-fx-font-weight: bold;
+}
+
+.dropdown-box .combo-box {
+	-fx-background-color: #FAFAFA;
+	-fx-background-radius: 5px;
+	-fx-background-insets: 0px;
+    -fx-min-height: 36px;
+    -fx-pref-height: 36px;
+    -fx-max-height: 36px;
+
+	-fx-border-color: #D6D6D6;
+	-fx-border-width: 1px;
+	-fx-border-radius: 5px;
+}
+
+
+/* TABLE */
+
+.table-box .table-view {
+    -fx-background-color: #f5f5f5;
+    -fx-background-insets: none;
+    -fx-background-radius: 4px;
+    -fx-border-width: 0;
+    -fx-padding: 20px 0 0 0;
+    -fx-effect: dropshadow(gaussian, #cecece, 20,0,0,0);
+}
+
+.table-box .label { -fx-text-fill: black; }
+
+.table-box .table-view .column-header-background {
+    -fx-background-color: #ededed;
+    -fx-border-color: #e3e3e3;
+    -fx-border-width: 1px 0 1px 0;
+    -fx-padding: 10px;
+}
+
+.table-view .filler,
+.table-view .nested-column-header, 
+.table-view .column-header {
+     -fx-background-color: transparent;
+}
+
+
+.table-view *.column-header .label {
+    -fx-font-weight: normal;
+    -fx-text-fill: #6D6D6D;
+}
+
+.table-view .column-resize-line {
+    -fx-background-color: red;
+}
+
+.table-view .place-holder {
+    -fx-background-color: transparent;
+}
+
+/* rows */
+
+.table-view .table-row-cell {
+    -fx-background-color: #fafbff;
+} 
+
+
+/* TEXT */
+
+.text-box .label { -fx-text-fill: #161616; }
+.emphase { -fx-font-weight: bold; }
+
+.title {
+    -fx-font-size: 1.3em;
+	-fx-font-weight: bold;
+	-fx-text-fill: #161616;
+}
+
+.title-with-background {
+	-fx-background-color: rgba(0,0,0,0.2);
+	-fx-background-radius: 5px;
+	-fx-padding: 2px 6px;
+	-fx-font-weight: bold;
+}
+
+
+/* TEXTFIELD */
+
+.textfield-box 			{ -fx-spacing: 6px; /* tiny */ }
+.textfield-box .root 	{ -fx-spacing: 6px; }
+
+.textfield-box .label {
+    -fx-font-family: 'lato';
+	-fx-font-weight: bold;
+}
+
+.textfield-box .text-field {
+    -fx-background-insets: transparent;
+    -fx-background-color: transparent;
+    -fx-border-color: #D6D6D6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+
+    -fx-padding: 0 12px 0 12px;
+    -fx-min-height: 36px;
+    -fx-pref-height: 36px;
+    -fx-max-height: 36px;
+}
+
+
+/* list-view */
+.listview-box .list-view {
+	-fx-background-color: white;
+	-fx-background-instets: transparent;
+    -fx-border-color: #D6D6D6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.listview-box .list-cell {
+	-fx-background-color: transparent;
+	-fx-padding: 12px 18px;
+}
+
+.listview-box .list-cell:filled:selected:focused,
+.listview-box .list-cell:filled:selected {
+	-fx-text-fill: white;
+	-fx-background-radius: 5px;
+    -fx-background-color: #D9D9D9;
+}
+
+.listview-box .scroll-bar:vertical, 
+.listview-box .scroll-bar:horizontal {
+	-fx-background-color: transparent;
+}
+
+.listview-box .corner {
+	-fx-background-color: red;
+}
+
+.listview-box .track, {
+.listview-box .track-background, {
+	-fx-background-color: transparent;
+}
+
+.listview-box .track {
+	-fx-background-color: transparent;
+	-fx-max-width: 4px;
+}
+
+.listview-box .thumb {
+	-fx-background-color: #D9D9D9;
+	-fx-min-width: 4px;
+	-fx-pref-width: 4px;
+	-fx-max-width: 4px;
+}
+
+.listview-box .decrement-button, 
+.listview-box .decrement-arrow,
+.listview-box .increment-arrow,
+.listview-box .increment-button  {
+	-fx-visible: false;
+}

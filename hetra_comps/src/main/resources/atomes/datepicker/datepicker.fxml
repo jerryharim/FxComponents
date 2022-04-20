@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox stylesheets="@datepicker.css" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="label_error" styleClass="text" text="" />
+      <Label fx:id="label" styleClass="text" text="Label" />
+      <DatePicker fx:id="datepicker" maxWidth="1.7976931348623157E308" prefHeight="41.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>

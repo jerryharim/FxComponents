@@ -1,0 +1,136 @@
+/* Control Buttons */
+.option-button{
+  -fx-pref-width: 45px;
+  -fx-background-radius: 0;
+  -fx-border: none;
+  -fx-pref-height: 35px;
+  -fx-background-color: transparent;
+  -fx-background-color: rgba(0,0,0,.02);
+  -fx-background-size: 50% auto;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-opacity: .8;
+  -fx-cursor: hand;
+}
+.option-button:hover{
+  -fx-background-color: rgba(255,255,255,.1);
+  -fx-opacity: 1;
+}
+.option-buttons{
+  -fx-alignment:  center_left;
+}
+.close{
+  -fx-background-image: url("../../images/closep.png");
+}
+.close:hover{
+  -fx-background-color: #FF6060;
+}
+.maximize{
+  -fx-background-image: url("../../images/max.png");
+}
+.maximize.max{
+  -fx-background-image: url("../../images/max2.png") !important;
+}
+.minimize{
+  -fx-background-image: url("../../images/min.png");
+}
+.minimize{
+  -fx-background-image: url("../../images/min.png");
+}
+
+/* Logo */
+.header-right{
+  -fx-spacing: 5px
+}
+.header-logo, .header-cog{
+  -fx-background-size: auto 70%;
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-opacity: .8;
+}
+.header-logo{
+  -fx-background-image: url("../../images/flag.png");
+  -fx-background-size: auto 90%;
+  -fx-background-position: 0 0;
+  -fx-background-color: rgba(255, 255, 255, .4);
+  -fx-background-radius: 0 15px 15px 0;
+  -fx-effect: dropshadow(three-pass-box, #fff, 23, 0, 0, 0);
+}
+
+/* header */
+.header{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0, .1), 5, 0, 0, 0);
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #0BA099;
+}
+.menu-button {
+  -fx-background-color: transparent;
+  -fx-border-radius: 0px;
+  -fx-font-size: 12px;
+}
+.menu-button .context-menu {
+    -fx-background-color: #fff;
+    -fx-pref-width: 140px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-translate-y: 10px;
+    -fx-border-width: 0px;
+}
+.menu-button .context-menu .menu-item{
+    -fx-padding: 10px 10px 10px 10px;
+}
+.menu-button .context-menu .menu-item:hover, .menu-button .context-menu .menu-item:focused{
+  -fx-background-color: rgb(6, 199, 107);
+}
+
+.menu-button .context-menu .menu-item:hover .label, .menu-button .context-menu .menu-item:focused{
+  -fx-text-fill: #fff;
+}
+
+
+.menu-button .arrow-button .arrow {
+     -fx-background-color: transparent;
+     -fx-opacity: 0.0;
+}
+
+.menu-button .arrow-button{
+  -fx-pref-width: 25px;
+  -fx-background-position: center;
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: contain;
+}
+
+.user-menu .arrow-button{
+  -fx-background-image: url("../../images/user.png");
+}
+
+.header .user-menu, .header .menu-button *{
+  -fx-text-fill: rgba(255, 255, 255, .8);
+}
+
+.popupbox{
+  -fx-padding: 7px 10px 0px 10px;
+  -fx-background-radius: 5px;
+  -fx-border-radius: 5px;
+  -fx-background-color: #fff;
+  -fx-border-width: 1px;
+  -fx-border-color: rgba(50, 50, 50, 0.3);
+}
+
+.pb-title{
+  -fx-font-size: 17px;
+  -fx-padding: 0 0 5px 0;
+}
+
+.pb-link{
+  -fx-padding: 7px 0px;
+  -fx-font-size: 14px;
+  -fx-text-fill: dodgerblue;
+  -fx-cursor: hand;
+}
+
+/*  ROOT CONTAINER  */
+.root-container{
+  -fx-background-color: #F2F3F4;
+}

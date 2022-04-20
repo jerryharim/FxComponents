@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxWidth="300.0" minWidth="300.0" prefHeight="695.0" prefWidth="300.0" styleClass="vm-root" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" maxHeight="130.0" maxWidth="130.0" prefHeight="200.0" prefWidth="120.0" styleClass="logo-parent">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+               <image>
+                  <Image url="@../images/tafita.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="32.0" prefWidth="260.0" styleClass="menuh-container">
+         <children>
+            <MenuButton fx:id="yearmenu" alignment="CENTER" contentDisplay="CENTER" maxHeight="85.0" minHeight="45.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="307.0" styleClass="year-menu" text="Année" textAlignment="CENTER">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </VBox>
+      <VBox fx:id="menu_container" styleClass="menu-container" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="importation" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#importation_selected" prefHeight="52.0" prefWidth="258.0" styleClass="import" text="Importation" />
+            <Button fx:id="contribuable" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#contribuables_selected" styleClass="payer" text="Contribuables" />
+            <Button fx:id="parametre" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#parametres_selected" styleClass="settings" text="Paramètres" />
+            <Button fx:id="impression" alignment="TOP_LEFT" layoutX="10.0" layoutY="106.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#impression_selected" styleClass="print" text="Impression" />
+            <Button fx:id="stats" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#stats_selected" styleClass="stats" text="Statistique" />
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="40.0" left="20.0" right="20.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../style/vertical_menu.css" />
+      <URL value="@../page/home/theme.css" />
+   </stylesheets>
+</VBox>

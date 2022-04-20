@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+
+
+<Label fx:id="text" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-font-style: uppercase;" text="Label" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" />
