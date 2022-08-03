@@ -3,14 +3,23 @@ allprojects {
     version '0.1'
 }
 
+
 subprojects {
-    apply plugin: 'application'
+
+	plugins {
+		id 'application'
+		id 'org.openjfx.javafxplugin' version '0.0.10'
+	}
 
     sourceCompatibility = 11
     targetCompatibility = 11
 
+	javafx {
+		version = "16-ea+1"
+		modules = [ 'javafx.controls', 'javafx.fxml' ]
+	}
+
     repositories {
-        mavenLocal()
         mavenCentral()
     }
 
